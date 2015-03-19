@@ -31,7 +31,7 @@ describe("example03 - all", function() {
 	describe("Tenant 2", function() {
 		it('application 1 - success', function(done) {
 			var params={
-				uri: 'http://rest-proxy:4000/example03/buildName?lastName=Smith',
+				uri: 'http://127.0.0.1:4000/example03/buildName?lastName=Smith',
 				headers:{
 					'key': t2_key						
 				}
@@ -51,7 +51,7 @@ describe("example03 - all", function() {
 		});
 		it('application 1 - success - no tenant name', function(done) {
 			var params={
-				uri: 'http://rest-proxy:4000/example03/buildName?lastName=Smith',
+				uri: 'http://127.0.0.1:4000/example03/buildName?lastName=Smith',
 				headers:{
 					'key': t2_key_2						
 				}
@@ -74,7 +74,7 @@ describe("example03 - all", function() {
 	describe("Tenant 3", function() {
 		it('application 1 - buildName success', function(done) {
 			var params={
-				uri: 'http://rest-proxy:4000/example03/buildName?lastName=Smith',
+				uri: 'http://127.0.0.1:4000/example03/buildName?lastName=Smith',
 				headers:{
 					'key': t3_key						
 				}
@@ -95,7 +95,7 @@ describe("example03 - all", function() {
 		
 		it('application 1 - testGet fail', function(done) {
 			var params={
-				uri: 'http://rest-proxy:4000/example03/testGet?lastName=Smith',
+				uri: 'http://127.0.0.1:4000/example03/testGet?lastName=Smith',
 				headers:{
 					'key': t3_key						
 				}

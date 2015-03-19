@@ -25,7 +25,7 @@ $ node.
 We have copied the same API from Example03 service and we added oauth security to it.
 
 ```bash
-$ curl -X GET -H "key:%some_tenant_key%" "http://rest-proxy:4000/example04/buildName?lastName=Smith"
+$ curl -X GET -H "key:%some_tenant_key%" "http://127.0.0.1:4000/example04/buildName?lastName=Smith"
 ```
 
 Response:
@@ -66,7 +66,7 @@ Response:
 We got the token, now let's call the service again and provide the token:
 
 ```bash
-$ curl -X GET -H "key:%some_tenant_key%" "http://rest-proxy:4000/example04/buildName?lastName=Smith&access_token=e59104df7256d2d0a77771303ea81fd68ed39e45"
+$ curl -X GET -H "key:%some_tenant_key%" "http://127.0.0.1:4000/example04/buildName?lastName=Smith&access_token=e59104df7256d2d0a77771303ea81fd68ed39e45"
 ```
 
 Response:

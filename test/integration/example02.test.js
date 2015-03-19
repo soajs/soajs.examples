@@ -9,7 +9,7 @@ var tkey ="aa39b5490c4a4ed0e56d7ec1232a428f771e8bb83cfcee16de14f735d0f5da587d596
 var Authorization ='Basic MTBkMmNiNWZjMDRjZTUxZTA2MDAwMDAxOnNoaGggdGhpcyBpcyBhIHNlY3JldA==' ;
 
 var oAuthParams = {
-    url: 'http://rest-proxy:4000/oauth/token',
+    url: 'http://127.0.0.1:4000/oauth/token',
     method : "POST",    
     body: 'username=oauthuser&password=oauthpassword&grant_type=password' ,     
     json: true , 
@@ -21,7 +21,7 @@ var oAuthParams = {
     }
 };
 var buildNameParams={
-	uri: 'http://rest-proxy:4000/example02/buildName',
+	uri: 'http://127.0.0.1:4000/example02/buildName',
 	qs: {
     	'firstName':'David',
     	'lastName':'Smith'

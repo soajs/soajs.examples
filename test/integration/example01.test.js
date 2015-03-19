@@ -93,7 +93,7 @@ describe("example01", function() {
 	
 	describe("testDel route", function() {		
 		var testDelOptions = {
-		    url: 'http://rest-proxy:4000/example01/testDel',
+		    url: 'http://127.0.0.1:4000/example01/testDel',
 		    method : "DELETE",      
 		    json: true
 		};
@@ -127,7 +127,7 @@ describe("example01", function() {
 	
 	describe("testPost route", function() {
 		var testPostOptions = {
-		    url: 'http://rest-proxy:4000/example01/testPost',
+		    url: 'http://127.0.0.1:4000/example01/testPost',
 		    method : "POST",     
 		    json: true
 		};
@@ -180,7 +180,7 @@ describe("example01", function() {
 	
 	describe("testPut", function() {
 		var testPutOptions = {
-		    url: 'http://rest-proxy:4000/example01/testPut',
+		    url: 'http://127.0.0.1:4000/example01/testPut',
 		    method : "PUT",    
 		    json: true
 		};

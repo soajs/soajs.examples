@@ -8,7 +8,7 @@ describe("importing sample data", function() {
 
 		shell.pushd(__dirname + '/../../tools/');
 		shell.exec('./soajs.mongo.sh', function(code, output) {
-			console.log('test data imported.')
+			console.log('test data imported.');
 			shell.popd();
 			done();
 		});

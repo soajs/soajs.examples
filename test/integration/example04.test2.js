@@ -9,7 +9,7 @@ var t1_app3_key ="4232477ed993d167ec13ccf8836c29c4c3eabd8dc5d6b29af1725af616353c
 var Authorization ='Basic NTRlZTIxNTBiN2E2NjlmYzIyYjdmNmI5Ok15IHNlY3JldCBwaHJhc2U=' ;
 
 var oAuthParams = {
-    url: 'http://rest-proxy:4000/oauth/token',
+    url: 'http://127.0.0.1:4000/oauth/token',
     method : "POST",    
     body: 'username=oauthuser_tenant1&password=oauthpassword_tenant1&grant_type=password' ,     
     json: true, 
@@ -21,7 +21,7 @@ var oAuthParams = {
     }
 };
 var buildNameParams={
-	uri: 'http://rest-proxy:4000/example04/buildName',
+	uri: 'http://127.0.0.1:4000/example04/buildName',
 	qs: {
     	'firstName':'David',
     	'lastName':'Smith'
@@ -33,7 +33,7 @@ var buildNameParams={
 	}
 };
 var buildNameGold_params={
-	uri: 'http://rest-proxy:4000/example04/buildNameGold',
+	uri: 'http://127.0.0.1:4000/example04/buildNameGold',
 	qs: {
     	'firstName':'David',
     	'lastName':'Smith'
@@ -47,7 +47,7 @@ var buildNameGold_params={
 
 
 var testGetParams={
-	uri: 'http://rest-proxy:4000/example04/testGet',
+	uri: 'http://127.0.0.1:4000/example04/testGet',
 	qs: {
     	'firstName':'David',
     	'lastName':'Smith'
@@ -60,7 +60,7 @@ var testGetParams={
 };
 
 var user1_loginParams={
-	uri: 'http://rest-proxy:4000/urac/login',
+	uri: 'http://127.0.0.1:4000/urac/login',
 	body: {   	
     	"username":"user1", "password":"123456" 
     },
@@ -69,7 +69,7 @@ var user1_loginParams={
 	}
 };
 var user2_loginParams={
-	uri: 'http://rest-proxy:4000/urac/login',
+	uri: 'http://127.0.0.1:4000/urac/login',
 	body: {   	
     	"username":"user2", "password":"123456" 
     },
@@ -172,7 +172,7 @@ describe("example04 - application 3", function() {
 					assert.equal(body.result, true);
 					assert.ok(body.data);							
 					done();
-				})
+				});
 									
 			});
 			

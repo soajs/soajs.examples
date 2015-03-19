@@ -23,7 +23,7 @@ describe("example03 - Tenant 1", function() {
 	
 	describe("user not logged in", function() {			
 		var params={
-			uri: 'http://rest-proxy:4000/example03/buildName?lastName=Smith',
+			uri: 'http://127.0.0.1:4000/example03/buildName?lastName=Smith',
 			headers:{
 				'key': t1_app1_key						
 			}
@@ -55,14 +55,14 @@ describe("example03 - Tenant 1", function() {
 	
 	describe("user logged in", function() {
 		var apibuildNameParams={
-			uri: 'http://rest-proxy:4000/example03/buildName?lastName=Smith',
+			uri: 'http://127.0.0.1:4000/example03/buildName?lastName=Smith',
 			headers:{
 				'key': t1_app1_key,
 				'soajsauth' : ''
 			}
 		};
 		var apitestGetParams={
-			uri: 'http://rest-proxy:4000/example03/testGet?lastName=Smith&firstName=John',
+			uri: 'http://127.0.0.1:4000/example03/testGet?lastName=Smith&firstName=John',
 			headers:{
 				'key': t1_app1_key,
 				'soajsauth' : ''
@@ -71,7 +71,7 @@ describe("example03 - Tenant 1", function() {
 		
 		it("user 1 - application 1 - access fail", function(done) {			
 			var loginParams={
-				uri: 'http://rest-proxy:4000/urac/login',
+				uri: 'http://127.0.0.1:4000/urac/login',
 				body: {   	
 			    	"username":"user1", "password":"123456" 
 			    },
@@ -101,7 +101,7 @@ describe("example03 - Tenant 1", function() {
 		});
 		
 		var user2_loginParams={
-			uri: 'http://rest-proxy:4000/urac/login',
+			uri: 'http://127.0.0.1:4000/urac/login',
 			body: {   	
 		    	"username":"user2", "password":"123456" 
 		    },
@@ -153,7 +153,7 @@ describe("example03 - Tenant 1", function() {
 		
 		describe(" user 3 ", function() {
 			var user3_loginParams={
-				uri: 'http://rest-proxy:4000/urac/login',
+				uri: 'http://127.0.0.1:4000/urac/login',
 				body: {   	
 			    	"username":"user3", "password":"654321" 
 			    },
