@@ -6,8 +6,15 @@
     "name": "soajs team",
     "email": "team@soajs.org"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:soajs/soajs.examples.git"
+  },
   "engines": {
     "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
   },
   "dependencies": {
     "soajs": "0.0.*"
