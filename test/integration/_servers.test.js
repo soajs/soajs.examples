@@ -1,8 +1,7 @@
-var controller = require("soajs.controller");
-var oauth = require("soajs.oauth");
-var urac = require("soajs.urac");
-
+"use strict";
+var controller, urac, oauth;
 var shell = require('shelljs');
+
 describe("importing sample data", function() {
 	it("do import", function(done) {
 
@@ -10,6 +9,9 @@ describe("importing sample data", function() {
 		shell.exec('./soajs.mongo.sh', function(code, output) {
 			console.log('test data imported.');
 			shell.popd();
+			controller = require("soajs.controller");
+			oauth = require("soajs.oauth");
+			urac = require("soajs.urac");
 			done();
 		});
 
