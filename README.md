@@ -1,6 +1,7 @@
 # soajs.examples
 [![Build Status](https://travis-ci.org/soajs/soajs.examples.svg?branch=master)](https://travis-ci.org/soajs/soajs.examples)
 [![Coverage Status](https://coveralls.io/repos/soajs/soajs.examples/badge.png)](https://coveralls.io/r/soajs/soajs.examples)
+[![NPM version](https://badge.fury.io/js/soajs.examples.svg)](http://badge.fury.io/js/soajs.examples)
 
 We have created four ready examples for you to get started. 
 You can test those examples and learn how to create a service, add some security and protect it, use the same service with different tenants and apply different access controls on your service.
