@@ -1,7 +1,7 @@
 {
   "name": "soajs.examples",
   "description": "soajs examples service",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "soajs team",
     "email": "team@soajs.org"
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "soajs.controller": "0.0.*",
+    "soajs.mongodb.data": "0.0.*",
     "soajs.urac": "0.0.*",
     "soajs.oauth": "0.0.*",
     "grunt":"0.4.5",
