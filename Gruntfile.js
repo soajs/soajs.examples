@@ -77,7 +77,7 @@ module.exports = function (grunt) {
           "after": false,
           "afterEach": false
         },
-        ignores: ['tools/data/**/*.js','test/coverage/**/*.js']
+        ignores: ['test/coverage/**/*.js']
       },
       files: {
         src: ['**/*.js']
@@ -172,7 +172,7 @@ module.exports = function (grunt) {
       },
       your_target: {
         // Target-specific LCOV coverage file
-        src: 'test/coverage/reports/lcov.info',
+        src: 'test/coverage/reports/lcov.info'
       }
     }
   });
@@ -183,6 +183,7 @@ module.exports = function (grunt) {
   grunt.registerTask("unit", ['env:mochaTest','mochaTest:unit']);
   grunt.registerTask("test", ['integration','unit']);
   grunt.registerTask("coverage", ['clean', 'env:coverage', 'instrument', 'mochaTest:integration', 'storeCoverage', 'makeReport','coveralls']);
+  //grunt.registerTask("coverage", ['clean', 'env:coverage', 'instrument', 'mochaTest:integration', 'storeCoverage', 'makeReport']);
 
 };
 

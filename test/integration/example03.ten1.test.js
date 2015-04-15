@@ -49,7 +49,22 @@ describe("example03 - Tenant 1", function() {
 				assert.equal(body.data.tenantName , 'Client One');
 				done();
 			});									
-		});			
+		});
+		it('application 2 - success testGet', function(done) {	
+			var paramsGet={
+					uri: 'http://127.0.0.1:4000/example03/testGet?lastName=Smith',
+					headers:{
+						'key': t1_app2_key						
+					}
+				};
+			helper.requester('get', paramsGet, function(err, body, req){
+				assert.ifError(err);
+				assert.ok(body);
+				assert.equal(body.result, true);
+				assert.ok(body.data);
+				done();
+			});									
+		});	
 		
 	});
 	
