@@ -2,11 +2,19 @@
 
 module.exports = {
 	serviceName: "example01",
+	serviceIp: "127.0.0.1",
+	port: 4010,
+	extKeyRequired: false,
 	"errors": {
 		"900": "firstName not found"
 	},
 	"schema": {
 		"/testGet": {
+			"_apiInfo":{
+				"l": "Test Get", //label
+				//"group": "", //for dashboard gui only
+				//"groupDefault": true //for dashboard gui only
+			},
 			"firstName": {
 				"source": ['query.firstName'],
 				"required": true,
@@ -31,6 +39,9 @@ module.exports = {
 			}
 		},
 		"/testDel": {
+			"_apiInfo":{
+				"l": "Test Delete"
+			},
 			"firstName": {
 				"source": ['query.firstName'],
 				"required": false,
@@ -47,6 +58,9 @@ module.exports = {
 			}
 		},
 		"/buildName": {
+			"_apiInfo":{
+				"l": "Build Name"
+			},
 			"firstName": {
 				"source": ['query.firstName'],
 				"required": true,
@@ -64,6 +78,9 @@ module.exports = {
 			}
 		},
 		"/testPost": {
+			"_apiInfo":{
+				"l": "Test Post"
+			},
 			"firstName": {
 				"source": ['body.firstName'],
 				"required": true,
@@ -87,6 +104,9 @@ module.exports = {
 			}
 		},
 		"/testPut": {
+			"_apiInfo":{
+				"l": "Test Put"
+			},
 			"firstName": {
 				"source": ['body.firstName'],
 				"required": true,
