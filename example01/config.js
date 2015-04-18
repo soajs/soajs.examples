@@ -3,7 +3,7 @@
 module.exports = {
 	serviceName: "example01",
 	serviceIp: "127.0.0.1",
-    designatedPort: 4010,
+    servicePort: 4010,
 	extKeyRequired: false,
 	"errors": {
 		"900": "firstName not found"
