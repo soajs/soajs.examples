@@ -24,6 +24,12 @@ describe("importing sample data", function() {
             setTimeout(function() {
                 oauth = require("soajs.oauth");
                 urac = require("soajs.urac");
+                require ("./example01.test.js");
+                require ("./example02.test.js");
+                require ("./example03.ten1.test.js");
+                require ("./example03.test.js");
+                require ("./example04.test.js");
+                require ("./example04.test2.js");
                 done();
             },500);
 		}, 1000);
