@@ -2,6 +2,8 @@
 
 module.exports = {
 	"serviceName": "example02",
+    servicePort: 4011,
+    extKeyRequired: true,
 	"errors": {},
 	"schema": {
 		"/buildName": {

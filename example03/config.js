@@ -2,6 +2,8 @@
 
 module.exports = {
 	"serviceName": "example03",
+    servicePort: 4012,
+    extKeyRequired: true,
 	"errors": {},
 	"schema": {
 		"commonFields": {	        

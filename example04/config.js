@@ -1,6 +1,8 @@
 'use strict';
 module.exports = {
 	"serviceName": "example04",
+    servicePort: 4013,
+    extKeyRequired: true,
 	"errors": {},
 	"schema": {
 		"commonFields": {	        
