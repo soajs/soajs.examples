@@ -21,9 +21,11 @@ describe("importing sample data", function() {
 		console.log('test data imported.');
 		setTimeout(function() {
 			controller = require("soajs.controller");
-			oauth = require("soajs.oauth");
-			urac = require("soajs.urac");
-			done();
+            setTimeout(function() {
+                oauth = require("soajs.oauth");
+                urac = require("soajs.urac");
+                done();
+            },500);
 		}, 1000);
 	});
 });
