@@ -2,7 +2,6 @@
 
 module.exports = {
 	serviceName: "example01",
-	serviceIp: "127.0.0.1",
     servicePort: 4010,
 	extKeyRequired: false,
 	"errors": {
