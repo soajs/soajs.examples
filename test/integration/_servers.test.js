@@ -32,6 +32,6 @@ describe("importing sample data", function() {
                 require ("./example04.test2.js");
                 done();
             },500);
-		}, 1000);
+		}, 2000);
 	});
 });
