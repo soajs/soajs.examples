@@ -7,6 +7,9 @@ module.exports = {
 	"errors": {},
 	"schema": {
 		"/buildName": {
+			"_apiInfo":{
+				"l": "Build Name"
+			},
 			"firstName": {
 				"source": ['query.firstName'],
 				"required": true,

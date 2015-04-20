@@ -10,9 +10,7 @@ module.exports = {
 	"schema": {
 		"/testGet": {
 			"_apiInfo":{
-				"l": "Test Get", //label
-				//"group": "", //for dashboard gui only
-				//"groupDefault": true //for dashboard gui only
+				"l": "Test Get"
 			},
 			"firstName": {
 				"source": ['query.firstName'],
