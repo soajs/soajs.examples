@@ -20,11 +20,13 @@ service.init(function () {
 
     service.get("/buildName", function (req, res) {
         var tenant = '';
-        if ((req.soajs.servicesConfig.example04) && (req.soajs.servicesConfig.example04.tenantName)) {
-            tenant = req.soajs.servicesConfig.example04.tenantName;
-        }
-        else {
-            // if it is an important configuration, and it is missing, return an error
+        if(req.soajs.servicesConfig){
+            if ((req.soajs.servicesConfig.example04) && (req.soajs.servicesConfig.example04.tenantName)) {
+                tenant = req.soajs.servicesConfig.example04.tenantName;
+            }
+            else {
+                // if it is an important configuration, and it is missing, return an error
+            }
         }
         var name = req.soajs.inputmaskData.firstName + ' ' + req.soajs.inputmaskData.lastName;
         res.json(req.soajs.buildResponse(null, {

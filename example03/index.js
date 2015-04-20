@@ -20,8 +20,14 @@ service.init(function () {
 
     service.get("/buildName", function (req, res) {
         var tenant = '';
-        if ((req.soajs.servicesConfig.example03) && (req.soajs.servicesConfig.example03.tenantName)) {
-            tenant = req.soajs.servicesConfig.example03.tenantName;
+        console.log( 'req.soajs.servicesConfig: ' );
+        console.log( req.soajs.servicesConfig );
+        if (req.soajs.servicesConfig) {
+            if (req.soajs.servicesConfig.example03) {
+                if (req.soajs.servicesConfig.example03.tenantName) {
+                    tenant = req.soajs.servicesConfig.example03.tenantName;
+                }
+            }
         }
         var name = req.soajs.inputmaskData.firstName + ' ' + req.soajs.inputmaskData.lastName;
         res.json(req.soajs.buildResponse(null, {
