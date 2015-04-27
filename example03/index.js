@@ -20,8 +20,6 @@ service.init(function () {
 
     service.get("/buildName", function (req, res) {
         var tenant = '';
-        console.log( 'req.soajs.servicesConfig: ' );
-        console.log( req.soajs.servicesConfig );
         if (req.soajs.servicesConfig) {
             if (req.soajs.servicesConfig.example03) {
                 if (req.soajs.servicesConfig.example03.tenantName) {
