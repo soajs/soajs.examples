@@ -2,29 +2,37 @@
 
 module.exports = {
 	"serviceName": "example03",
+	servicePort: 4012,
+	extKeyRequired: true,
 	"errors": {},
 	"schema": {
-		"commonFields": {	        
-            "firstName": {
-                "source": ['query.firstName'],
-                "required": true,
-                "default": "John",
-                "validation": {
-                    "type": "string"
-                }
-            },
-	        "lastName": {
+		"commonFields": {
+			"firstName": {
+				"source": ['query.firstName'],
+				"required": true,
+				"default": "John",
+				"validation": {
+					"type": "string"
+				}
+			},
+			"lastName": {
 				"source": ['query.lastName'],
 				"required": true,
 				"validation": {
 					"type": "string"
 				}
 			}
-	    },
+		},
 		"/testGet": {
-			"commonFields": ["firstName", "lastName"]			
+			"_apiInfo":{
+				"l": "Test Get"
+			},
+			"commonFields": ["firstName", "lastName"]
 		},
 		"/buildName": {
+			"_apiInfo":{
+				"l": "Build Name"
+			},
 			"commonFields": ["firstName", "lastName"]
 		}
 	}

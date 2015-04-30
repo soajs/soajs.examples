@@ -21,9 +21,18 @@ describe("importing sample data", function() {
 		console.log('test data imported.');
 		setTimeout(function() {
 			controller = require("soajs.controller");
-			oauth = require("soajs.oauth");
-			urac = require("soajs.urac");
-			done();
+            setTimeout(function() {
+                oauth = require("soajs.oauth");
+                urac = require("soajs.urac");
+                require ("./example01.test.js");
+                require ("./example02.test.js");
+                require ("./example03.ten1.test.js");
+                require ("./example03.test.js");
+                require ("./example04.test.js");
+                require ("./example04.test2.js");
+                require ("./helloworld.test.js");
+                done();
+            },1000);
 		}, 1000);
 	});
 });

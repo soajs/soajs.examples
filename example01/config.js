@@ -2,11 +2,16 @@
 
 module.exports = {
 	serviceName: "example01",
+    servicePort: 4010,
+	extKeyRequired: false,
 	"errors": {
 		"900": "firstName not found"
 	},
 	"schema": {
 		"/testGet": {
+			"_apiInfo":{
+				"l": "Test Get"
+			},
 			"firstName": {
 				"source": ['query.firstName'],
 				"required": true,
@@ -31,6 +36,9 @@ module.exports = {
 			}
 		},
 		"/testDel": {
+			"_apiInfo":{
+				"l": "Test Delete"
+			},
 			"firstName": {
 				"source": ['query.firstName'],
 				"required": false,
@@ -47,6 +55,9 @@ module.exports = {
 			}
 		},
 		"/buildName": {
+			"_apiInfo":{
+				"l": "Build Name"
+			},
 			"firstName": {
 				"source": ['query.firstName'],
 				"required": true,
@@ -64,6 +75,9 @@ module.exports = {
 			}
 		},
 		"/testPost": {
+			"_apiInfo":{
+				"l": "Test Post"
+			},
 			"firstName": {
 				"source": ['body.firstName'],
 				"required": true,
@@ -87,6 +101,9 @@ module.exports = {
 			}
 		},
 		"/testPut": {
+			"_apiInfo":{
+				"l": "Test Put"
+			},
 			"firstName": {
 				"source": ['body.firstName'],
 				"required": true,

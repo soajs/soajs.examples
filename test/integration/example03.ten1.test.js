@@ -32,6 +32,7 @@ describe("example03 - Tenant 1", function() {
 			helper.requester('get', params, function(err, body, req){
 				assert.ifError(err);
 				assert.ok(body);
+				console.log( JSON.stringify (body) ) ;
 				assert.equal(body.result, false);
 				assert.ok(body.errors);			
 				assert.equal(body.errors.details[0].message, 'Access denied: The service is not available in your current package.');					

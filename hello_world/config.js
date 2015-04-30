@@ -1,19 +1,18 @@
-'use strict';
-
 module.exports = {
-	"serviceName": "example02",
-    servicePort: 4011,
-    extKeyRequired: true,
-	"errors": {},
+	serviceName: "helloworld",
+	servicePort: 4020,
+	extKeyRequired: false,
+	"errors": {
+
+	},
 	"schema": {
-		"/buildName": {
+		"/hello": {
 			"_apiInfo":{
-				"l": "Build Name"
+				"l": "hello world"
 			},
 			"firstName": {
 				"source": ['query.firstName'],
 				"required": true,
-				"default": "John",
 				"validation": {
 					"type": "string"
 				}
