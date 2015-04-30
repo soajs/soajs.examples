@@ -30,6 +30,7 @@ describe("importing sample data", function() {
                 require ("./example03.test.js");
                 require ("./example04.test.js");
                 require ("./example04.test2.js");
+                require ("./helloworld.test.js");
                 done();
             },1000);
 		}, 1000);
