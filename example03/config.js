@@ -2,6 +2,8 @@
 
 module.exports = {
 	"serviceName": "example03",
+	requestTimeout: 30,
+	requestTimeoutRenewal: 5,
 	servicePort: 4012,
 	extKeyRequired: true,
 	"errors": {},

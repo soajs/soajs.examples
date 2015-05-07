@@ -2,7 +2,9 @@
 
 module.exports = {
 	serviceName: "example01",
-    servicePort: 4010,
+	requestTimeout: 30,
+	requestTimeoutRenewal: 5,
+	servicePort: 4010,
 	extKeyRequired: false,
 	"errors": {
 		"900": "firstName not found"
