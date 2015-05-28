@@ -33,7 +33,7 @@ module.exports = {
 				"required": false,
 				"validation": {
 					"type": "string",
-					format: "email"
+					"format": "email"
 				}
 			}
 		},
@@ -98,7 +98,8 @@ module.exports = {
 				"source": ['body.email'],
 				"required": false,
 				"validation": {
-					"type": "string"
+					"type": "string",
+					"format": "email"
 				}
 			}
 		},
@@ -124,7 +125,8 @@ module.exports = {
 				"source": ['body.email'],
 				"required": false,
 				"validation": {
-					"type": "string"
+					"type": "string",
+					"format": "email"
 				}
 			}
 		}
