@@ -26,7 +26,6 @@ var buildNameParams={
     	'lastName':'Smith'
     },
 	headers:{
-		'key': tkey,
 	    "Content-type":"application/json" ,
 	    'Accept': "application/json"				
 	}
