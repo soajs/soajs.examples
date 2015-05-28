@@ -5,7 +5,7 @@ module.exports = {
     servicePort: 4011,
 		requestTimeout: 30,
 		requestTimeoutRenewal: 5,
-    extKeyRequired: true,
+    extKeyRequired: false,
 	"errors": {},
 	"schema": {
 		"/buildName": {
