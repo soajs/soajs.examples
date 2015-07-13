@@ -17,7 +17,7 @@
   "scripts": {
     "test": "grunt test"
   },
-  "dependencies": {
+  "peerDependencies": {
     "soajs": "0.1.*"
   },
   "devDependencies": {
