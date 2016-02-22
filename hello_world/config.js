@@ -1,5 +1,6 @@
 module.exports = {
 	serviceName: "helloworld",
+	serviceGroup: "Examples Group",
 	servicePort: 4020,
 	extKeyRequired: false,
 	"errors": {

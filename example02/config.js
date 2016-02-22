@@ -2,9 +2,10 @@
 
 module.exports = {
 	"serviceName": "example02",
+	"serviceGroup": "Examples Group",
     servicePort: 4011,
-		requestTimeout: 30,
-		requestTimeoutRenewal: 5,
+	requestTimeout: 30,
+	requestTimeoutRenewal: 5,
     extKeyRequired: false,
 	"errors": {},
 	"schema": {

@@ -1,6 +1,7 @@
 'use strict';
 module.exports = {
 	"serviceName": "example04",
+	serviceGroup: "Examples Group",
 	requestTimeout: 30,
 	requestTimeoutRenewal: 5,
 	servicePort: 4013,

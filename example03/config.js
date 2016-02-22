@@ -2,6 +2,7 @@
 
 module.exports = {
 	"serviceName": "example03",
+	serviceGroup: "Examples Group",
 	requestTimeout: 30,
 	requestTimeoutRenewal: 5,
 	servicePort: 4012,
