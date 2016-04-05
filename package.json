@@ -18,7 +18,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "soajs": "0.2.*"
+    "soajs": "https://github.com/soajs/soajs.git#develop"
   },
   "devDependencies": {
     "soajs.controller": "0.2.*",
