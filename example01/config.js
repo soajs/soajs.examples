@@ -1,8 +1,14 @@
 'use strict';
 
 module.exports = {
+	type: 'service',
+	prerequisites: {
+		cpu: '',
+		memory: ''
+	},
+	serviceVersion: 1,
 	serviceName: "example01",
-	serviceGroup: "Examples Group",
+	serviceGroup: "SOAJS Example Service",
 	requestTimeout: 30,
 	requestTimeoutRenewal: 5,
 	servicePort: 4010,

@@ -1,11 +1,20 @@
 'use strict';
 module.exports = {
-	"serviceName": "example04",
-	serviceGroup: "Examples Group",
+	type: 'service',
+	prerequisites: {
+		cpu: '',
+		memory: ''
+	},
+	serviceVersion: 1,
+	serviceName: "example04",
+	serviceGroup: "SOAJS Example Service",
 	requestTimeout: 30,
 	requestTimeoutRenewal: 5,
 	servicePort: 4013,
 	extKeyRequired: true,
+	"oauth": true,
+	"session": true,
+	
 	"errors": {},
 	"schema": {
 		"commonFields": {

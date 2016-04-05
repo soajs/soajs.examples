@@ -1,12 +1,20 @@
 'use strict';
 
 module.exports = {
-	"serviceName": "example02",
-	"serviceGroup": "Examples Group",
+	type: 'service',
+	prerequisites: {
+		cpu: '',
+		memory: ''
+	},
+	serviceVersion: 1,
+	serviceName: "example02",
+	serviceGroup: "SOAJS Example Service",
     servicePort: 4011,
 	requestTimeout: 30,
 	requestTimeoutRenewal: 5,
     extKeyRequired: false,
+	"oauth": true,
+	"session": false,
 	"errors": {},
 	"schema": {
 		"/buildName": {

@@ -1,7 +1,8 @@
 'use strict';
 var soajs = require('soajs');
 var config = require('./config.js');
-var service = new soajs.server.service({ "config": config });
+var service = new soajs.server.service(config);
+
 service.init(function() {
 	service.get("/hello", function(req, res) {
 		var name = req.soajs.inputmaskData.firstName + " " + req.soajs.inputmaskData.lastName;

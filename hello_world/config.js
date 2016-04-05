@@ -1,6 +1,12 @@
 module.exports = {
+	type: 'service',
+	prerequisites: {
+		cpu: '',
+		memory: ''
+	},
+	serviceVersion: 1,
 	serviceName: "helloworld",
-	serviceGroup: "Examples Group",
+	serviceGroup: "SOAJS Example Service",
 	servicePort: 4020,
 	extKeyRequired: false,
 	"errors": {
