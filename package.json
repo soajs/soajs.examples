@@ -17,9 +17,6 @@
   "scripts": {
     "test": "grunt test"
   },
-  "dependencies": {
-    "soajs": "https://github.com/soajs/soajs.git#develop"
-  },
   "devDependencies": {
     "soajs.controller": "0.2.*",
     "soajs.mongodb.data": "0.1.*",
@@ -38,5 +35,8 @@
     "mocha" : "*",
     "request" : "*",
     "shelljs" : "*"
+  },
+  "peerDependencies": {
+    "soajs": "0.2.*"
   }
 }
