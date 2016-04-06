@@ -36,7 +36,7 @@
     "request" : "*",
     "shelljs" : "*"
   },
-  "peerDependencies": {
-    "soajs": "0.2.*"
+  "dependencies": {
+    "soajs": "soajs/soajs.git#develop"
   }
 }
