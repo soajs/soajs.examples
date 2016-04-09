@@ -18,9 +18,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-  },
-  "peerDependencies": {
-    "soajs": "0.2.*"
+    "soajs": "git+https://github.com/soajs/soajs.git#develop"
   },
   "devDependencies": {
     "soajs.controller": "0.1.*",
