@@ -1,7 +1,7 @@
 {
   "name": "soajs.examples",
   "description": "soajs examples service",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "author": {
     "name": "soajs team",
     "email": "team@soajs.org"
@@ -17,28 +17,26 @@
   "scripts": {
     "test": "grunt test"
   },
-  "dependencies": {
-  },
-  "peerDependencies": {
-    "soajs": "0.2.*"
-  },
   "devDependencies": {
-    "soajs.controller": "0.1.*",
+    "soajs.controller": "0.2.*",
     "soajs.mongodb.data": "0.1.*",
-    "soajs.urac": "0.1.*",
-    "soajs.oauth": "0.1.*",
+    "soajs.urac": "0.2.*",
+    "soajs.oauth": "0.2.*",
     "grunt":"0.4.5",
-    "grunt-contrib-jshint":"0.10.0",
+    "grunt-contrib-jshint":"*",
     "grunt-jsdoc" : "*",
     "grunt-contrib-clean" : "*",
     "grunt-mocha-test" : "*",
     "grunt-env" : "*",
-    "grunt-istanbul" : "0.3.0",
+    "grunt-istanbul" : "*",
     "grunt-coveralls" : "*",
     "jshint" : "*",
     "lodash": "*",
     "mocha" : "*",
     "request" : "*",
     "shelljs" : "*"
+  },
+  "dependencies": {
+    "soajs": "0.3.*"
   }
 }
