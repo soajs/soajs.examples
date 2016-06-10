@@ -18,7 +18,7 @@ module.exports = {
 	},
 	"schema": {
 		"/testGet": {
-			"_apiInfo":{
+			"_apiInfo": {
 				"l": "Test Get"
 			},
 			"firstName": {
@@ -45,7 +45,7 @@ module.exports = {
 			}
 		},
 		"/testDel": {
-			"_apiInfo":{
+			"_apiInfo": {
 				"l": "Test Delete"
 			},
 			"firstName": {
@@ -64,7 +64,7 @@ module.exports = {
 			}
 		},
 		"/buildName": {
-			"_apiInfo":{
+			"_apiInfo": {
 				"l": "Build Name"
 			},
 			"firstName": {
@@ -84,7 +84,7 @@ module.exports = {
 			}
 		},
 		"/testPost": {
-			"_apiInfo":{
+			"_apiInfo": {
 				"l": "Test Post"
 			},
 			"firstName": {
@@ -111,7 +111,7 @@ module.exports = {
 			}
 		},
 		"/testPut": {
-			"_apiInfo":{
+			"_apiInfo": {
 				"l": "Test Put"
 			},
 			"firstName": {

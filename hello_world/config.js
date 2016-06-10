@@ -7,14 +7,14 @@ module.exports = {
 	serviceVersion: 1,
 	serviceName: "helloworld",
 	serviceGroup: "SOAJS Example Service",
+	requestTimeout: 30,
+	requestTimeoutRenewal: 5,
 	servicePort: 4020,
 	extKeyRequired: false,
-	"errors": {
-
-	},
+	"errors": {},
 	"schema": {
 		"/hello": {
-			"_apiInfo":{
+			"_apiInfo": {
 				"l": "hello world"
 			},
 			"firstName": {
