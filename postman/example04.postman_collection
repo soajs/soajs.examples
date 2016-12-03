@@ -1,0 +1,116 @@
+{
+	"id": "b1a25d8f-6299-355f-99cd-973cddd14a05",
+	"name": "example04",
+	"description": "",
+	"order": [
+		"f18b1790-31e2-3fcb-084f-0e623f1a4b9b",
+		"29adc796-c2b1-96d8-d852-a038cb3ab2ee",
+		"90bb5bb7-b2a8-950f-5180-403a1fe46f0e",
+		"126a51f5-6a8c-0409-697b-fe5d036e22d5"
+	],
+	"folders": [],
+	"timestamp": 1480707664788,
+	"owner": "944378",
+	"public": false,
+	"requests": [
+		{
+			"id": "126a51f5-6a8c-0409-697b-fe5d036e22d5",
+			"headers": "key: 4232477ed993d167ec13ccf8836c29c400fef7eb3d175b1f2192b82ebef6fb2d129cdd25fe23c04f856157184e11f7f57b65759191908cb5c664df136c7ad16a56a5917fdeabfc97c92a1f199e457e31f2450a810769ff1b29269bcb3f01e3d2\n",
+			"url": "http://127.0.0.1:4000/example04/buildName?lastName=Smith&access_token=dea637510d3ab4cd98f8b9202f13a4abb04ba56a",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "b1a25d8f-6299-355f-99cd-973cddd14a05",
+			"data": [],
+			"dataMode": "params",
+			"name": "ex4 buildName success",
+			"description": "Generated from a curl request: \ncurl -X GET -H \\\"key:4232477ed993d167ec13ccf8836c29c400fef7eb3d175b1f2192b82ebef6fb2d129cdd25fe23c04f856157184e11f7f57b65759191908cb5c664df136c7ad16a56a5917fdeabfc97c92a1f199e457e31f2450a810769ff1b29269bcb3f01e3d2\\\" \\\"http://127.0.0.1:4000/example04/buildName?lastName=Smith&access_token=dea637510d3ab4cd98f8b9202f13a4abb04ba56a\\\"\n",
+			"descriptionFormat": "html",
+			"time": 1480708910126,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "29adc796-c2b1-96d8-d852-a038cb3ab2ee",
+			"headers": "key: 4232477ed993d167ec13ccf8836c29c400fef7eb3d175b1f2192b82ebef6fb2d129cdd25fe23c04f856157184e11f7f57b65759191908cb5c664df136c7ad16a56a5917fdeabfc97c92a1f199e457e31f2450a810769ff1b29269bcb3f01e3d2\n",
+			"url": "http://127.0.0.1:4000/example04/buildName?lastName=Smith",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "b1a25d8f-6299-355f-99cd-973cddd14a05",
+			"data": [],
+			"dataMode": "params",
+			"name": "ex4 buildName fail",
+			"description": "Generated from a curl request: \ncurl -X GET -H \\\"key:4232477ed993d167ec13ccf8836c29c400fef7eb3d175b1f2192b82ebef6fb2d129cdd25fe23c04f856157184e11f7f57b65759191908cb5c664df136c7ad16a56a5917fdeabfc97c92a1f199e457e31f2450a810769ff1b29269bcb3f01e3d2\\\" \\\"http://127.0.0.1:4000/example04/buildName?lastName=Smith\\\"\n",
+			"descriptionFormat": "html",
+			"time": 1480708861559,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "90bb5bb7-b2a8-950f-5180-403a1fe46f0e",
+			"headers": "Authorization: Basic NTRlZTIxNTBiN2E2NjlmYzIyYjdmNmI5Ok15IHNlY3JldCBwaHJhc2U=\nkey: 4232477ed993d167ec13ccf8836c29c400fef7eb3d175b1f2192b82ebef6fb2d129cdd25fe23c04f856157184e11f7f57b65759191908cb5c664df136c7ad16a56a5917fdeabfc97c92a1f199e457e31f2450a810769ff1b29269bcb3f01e3d2\n",
+			"url": "http://127.0.0.1:4000/oauth/token",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "b1a25d8f-6299-355f-99cd-973cddd14a05",
+			"data": [
+				{
+					"key": "username",
+					"value": "oauthuser_tenant1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "oauthpassword_tenant1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "ex4 oAuth token",
+			"description": "Generated from a curl request: \ncurl -X POST -H \\\"Authorization: Basic NTRlZTIxNTBiN2E2NjlmYzIyYjdmNmI5Ok15IHNlY3JldCBwaHJhc2U=\\\" -H \\\"key:4232477ed993d167ec13ccf8836c29c400fef7eb3d175b1f2192b82ebef6fb2d129cdd25fe23c04f856157184e11f7f57b65759191908cb5c664df136c7ad16a56a5917fdeabfc97c92a1f199e457e31f2450a810769ff1b29269bcb3f01e3d2\\\" \\\"http://127.0.0.1:4000/oauth/token\\\" -d 'username=oauthuser_tenant1&password=oauthpassword_tenant1&grant_type=password'\n",
+			"descriptionFormat": "html",
+			"time": 1480708887091,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f18b1790-31e2-3fcb-084f-0e623f1a4b9b",
+			"headers": "",
+			"url": "http://127.0.0.1:5013/heartbeat",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "b1a25d8f-6299-355f-99cd-973cddd14a05",
+			"data": [],
+			"dataMode": "params",
+			"name": "ex4 heartbeat",
+			"description": "Generated from a curl request: \ncurl -X GET \\\"http://127.0.0.1:5013/heartbeat\\\"",
+			"descriptionFormat": "html",
+			"time": 1480708835756,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
