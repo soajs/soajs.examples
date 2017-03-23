@@ -14,6 +14,7 @@ module.exports = {
 	servicePort: 4012,
 	extKeyRequired: true,
 	"session": true,
+	"oauth":true,
 
 	"errors": {},
 	"schema": {

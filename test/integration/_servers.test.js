@@ -28,8 +28,6 @@ describe("importing sample data", function () {
 				require("./example02.test.js");
 				require("./example03.ten1.test.js");
 				require("./example03.test.js");
-				require("./example04.test.js");
-				require("./example04.test2.js");
 				require("./helloworld.test.js");
 				done();
 			}, 1000);
