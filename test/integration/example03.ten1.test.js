@@ -186,7 +186,7 @@ describe("example03 - Tenant 1", function () {
 					assert.ok(body);
 					assert.equal(body.result, true);
 					assert.ok(body.data.fullName);
-					assert.equal(body.data.tenantName, "Client One");
+					assert.equal(body.data.tenantName, "Tenant name specific to user two");
 					done();
 				});
 			});
@@ -215,7 +215,7 @@ describe("example03 - Tenant 1", function () {
 						assert.ok(body);
 						assert.equal(body.result, true);
 						assert.ok(body.data.fullName);
-						assert.equal(body.data.tenantName, "Client One");
+						assert.equal(body.data.tenantName, "Tenant name specific to user two");
 						done();
 					});
 				});
