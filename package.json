@@ -31,12 +31,12 @@
     "mocha": "3.2.0",
     "request" : "2.79.0",
     "shelljs": "0.7.5",
-    "soajs.controller": "soajs/soajs.controller.git#develop",
-    "soajs.mongodb.data": "soajs/soajs.mongodb.data.git#develop",
-    "soajs.oauth": "soajs/soajs.oauth.git#develop",
-    "soajs.urac": "soajs/soajs.urac.git#develop"
+    "soajs.controller": "1.*",
+    "soajs.mongodb.data": "1.*",
+    "soajs.oauth": "1.*",
+    "soajs.urac": "1.*"
   },
   "dependencies": {
-    "soajs": "soajs/soajs.git#develop"
+    "soajs": "1.*"
   }
 }
