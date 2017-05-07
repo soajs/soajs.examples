@@ -13,6 +13,7 @@ module.exports = {
 	requestTimeoutRenewal: 5,
 	servicePort: 4010,
 	extKeyRequired: false,
+	oauth: false,
 	"errors": {
 		"900": "firstName not found"
 	},

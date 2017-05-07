@@ -11,6 +11,7 @@ module.exports = {
 	requestTimeoutRenewal: 5,
 	servicePort: 4020,
 	extKeyRequired: false,
+	oauth: false,
 	"errors": {},
 	"schema": {
 		"/hello": {
