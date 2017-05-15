@@ -100,6 +100,7 @@ module.exports = function (grunt) {
 			mochaTest: {
 				// NODE_ENV: 'test',
 				// APP_DIR: process.cwd(),
+				SOAJS_REGISTRY_BUILDALL: true,
 				SOAJS_ENV: 'dev',
 				APP_DIR_FOR_CODE_COVERAGE: '../',
 				SOAJS_SRVIP: '127.0.0.1'
@@ -107,6 +108,7 @@ module.exports = function (grunt) {
 			coverage: {
 				// NODE_ENV: 'test',
 				// APP_DIR: process.cwd(),
+				SOAJS_REGISTRY_BUILDALL: true,
 				SOAJS_ENV: 'dev',
 				APP_DIR_FOR_CODE_COVERAGE: '../test/coverage/instrument/',
 				SOAJS_SRVIP: '127.0.0.1'
