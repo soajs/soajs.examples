@@ -13,9 +13,7 @@ module.exports = {
 	requestTimeoutRenewal: 5,
 	servicePort: 4012,
 	extKeyRequired: true,
-	"session": true,
 	"oauth":true,
-
 	"errors": {},
 	"schema": {
 		"commonFields": {
