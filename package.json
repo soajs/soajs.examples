@@ -37,6 +37,6 @@
     "soajs.urac": "2.0.*"
   },
   "dependencies": {
-    "soajs": "2.0.*"
+    "soajs": "2.1.2"
   }
 }
