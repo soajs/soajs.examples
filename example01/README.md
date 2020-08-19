@@ -7,6 +7,9 @@ The service "Example01" is public and not secure, thus accessible by everyone.
 
 ##Start the service
 
+Make sure you set the needed environment variable needed for local deployment
+check out this [link](https://soajsorg.atlassian.net/wiki/x/A4AXcg)
+
 ```sh
 $ cd soajs.examples/example01
 $ node.
@@ -48,8 +51,3 @@ This api uses the DELETE protocol. It reads 2 input parameters from the query st
 ```bash
 $ curl -X DELETE "http://localhost:4000/example01/testDel?firstName=John&lastName=Smith"
 ```
-
-
----
-
-More information is available on SOAJS website for [example01](http://www.soajs.org/#/getStarted/example01).

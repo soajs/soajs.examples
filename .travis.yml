@@ -1,32 +1,46 @@
 language: node_js
 
-node_js: 6.9.5
+node_js: 10
 
-services:
-  - mongodb
+jobs:
+  include:
 
-env:
-  - CXX=g++-4.8
+  - stage: Check code quality
+    if: tag IS blank
+    before_script:
+    - npm install -g grunt-cli
+    - sleep 10
+    script:
+    - grunt
 
-branches:
-  only:
-    - master
+  - stage: Publish to npm
+    if: branch = master
+    script:
+    - echo "PUBLISH npm"
+    deploy:
+      provider: npm
+      email: $NPM_EMAIL
+      api_key: $NPM_TOKEN
+      on:
+        all_branches: true
+        condition: $TRAVIS_BRANCH = master
 
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
-  hosts:
-    - localhost
+  - stage: Tag and release
+    if: branch = master
+    script:
+    - echo "Tagging"
+    - export PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -Fn '{ print $2 }' | sed 's/[n:",]//g' | tr -d '[[:space:]]')
+    - export MAJOR_VERSION=$(echo ${PACKAGE_VERSION} | awk -F. '{ print $1 }')
+    - echo Package version ${PACKAGE_VERSION}
+    - echo Major version ${MAJOR_VERSION}
 
-before_install:
-  - sudo apt-get update && sudo apt-get install sendmail python make g++
-
-before_script:
-  - npm install -g grunt-cli
-  - sleep 10
-
-script:
-  - grunt coverage
+    - git config --local user.name ${GIT_USER}
+    - git config --local user.email ${GIT_EMAIL}
+    - git tag ${PACKAGE_VERSION}
+    deploy:
+      on:
+        all_branches: true
+        condition: $TRAVIS_BRANCH = master
+      provider: releases
+      api_key: ${GIT_TOKEN}
+      skip_cleanup: true

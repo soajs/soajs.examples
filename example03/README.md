@@ -3,17 +3,9 @@
 The purpose of example03 is to show you how to take advantage of multitenancy; and how to configure ACL and secure your APIs at the product, tenant and user levels
 
 
-##Provision The Sample Data
-
-If you have not provisioned the data yet (as described in example02), or you want a clean reset of the data, run the following commands:
-
-```sh
-$ cd soajs.examples/tools
-$ chmod +x soajs.mongo.sh
-$ ./soajs.mongo.sh
-```
-
 ##Start the service
+Make sure you set the needed environment variable needed for local deployment
+check out this [link](https://soajsorg.atlassian.net/wiki/x/A4AXcg)
 
 ```sh
 $ cd soajs.examples/example03
@@ -38,8 +30,7 @@ Response:
     "data": {
         "tenantName": "Client One",
         "lastName": "Smith"
-    },
-    "soajsauth": "Basic c29hanM6czAxOXI0OGxIa2RLV0Q0RXlHN2l0SWpidHZWbVo5R1g3R3A="
+    }
 }
 ```
 
@@ -54,12 +45,6 @@ Response:
     "data": {
         "tenantName": "Client Two",
         "lastName": "Thomas"
-    },
-    "soajsauth": "Basic c29hanM6czAxMjlsdlY5QTBZOW5Xd1JFVjJ0NEF0NXVyQjBtQkNydmc="
+    }
 }
 ```
-
-
----
-
-Visit SOAJS website for a detailed explanation on how to test [example03](http://www.soajs.org/#/getStarted/example03).

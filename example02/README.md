@@ -5,29 +5,18 @@ When securing a service with oAuth, the service becomes accessible only to logge
 Every request made to the service is first validated by SOAJS oAuth Service before it gets forwarded to that service.
 
 
-##Provision The Sample Data
-
-For this example, you need additional database settings. We have created sample records for you to use. You need to provision these data into your database.
-Just run the commands below.
-
-```sh
-$ cd soajs.examples/tools
-$ chmod +x soajs.mongo.sh
-$ ./soajs.mongo.sh
-```
-
----
-
 ##Start the service
 
 If you haven't already done so, read the section on oAuth to learn how to install and run the soajs.oauth service.
 Then install example02.
 
+Make sure you set the needed environment variable needed for local deployment
+check out this [link](https://soajsorg.atlassian.net/wiki/x/A4AXcg)
+
 ```sh
 $ cd soajs.examples/example02
 $ node.
 ```
-More information on oAuth is available on SOAJS website for [oauth](http://www.soajs.org/#/documentation/oauth).
 
 ---
 
@@ -67,11 +56,6 @@ Response:
     "result": true,
     "data": {
         "fullName": "John Smith"
-    },
-    "soajsauth": "Basic c29hanM6czAxV3JjX3F2V3R4bGdWb0l5czdBNkRnM2RjbU5STGJvSm4="
+    }
 }
 ```
-
----
-
-More information is available on SOAJS website for [example02](http://www.soajs.org/#/getStarted/example02).

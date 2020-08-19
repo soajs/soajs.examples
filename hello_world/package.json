@@ -18,25 +18,10 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "soajs.controller": "0.2.*",
-    "soajs.mongodb.data": "0.1.*",
-    "soajs.urac": "0.2.*",
-    "soajs.oauth": "0.2.*",
-    "grunt":"0.4.5",
-    "grunt-contrib-jshint":"*",
-    "grunt-jsdoc" : "*",
-    "grunt-contrib-clean" : "*",
-    "grunt-mocha-test" : "*",
-    "grunt-env" : "*",
-    "grunt-istanbul" : "*",
-    "grunt-coveralls" : "*",
-    "jshint" : "*",
-    "lodash": "*",
-    "mocha" : "*",
-    "request" : "*",
-    "shelljs" : "*"
+    "grunt": "1.0.4",
+    "grunt-contrib-jshint": "2.1.0"
   },
   "dependencies": {
-    "soajs": "0.3.*"
+    "soajs": "4.0.16"
   }
 }
