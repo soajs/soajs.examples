@@ -18,7 +18,16 @@ module.exports = {
 		config: {
 			prefix: ""
 		},
-		databases: {}
+		databases: {
+			urac: {
+				cluster: "soajs_cluster",
+				tenantSpecific: true
+			},
+			oauth: {
+				cluster: "soajs_cluster",
+				tenantSpecific: false
+			}
+		}
 	},
 	services: {
 		controller: {

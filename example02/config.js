@@ -16,7 +16,7 @@ module.exports = {
 	"serviceVersion": 1,
 	"serviceName": "example02",
 	"serviceGroup": "SOAJS Example Service",
-	"servicePort": 4011,
+	"servicePort": 4022,
 	"requestTimeout": 30,
 	"requestTimeoutRenewal": 5,
 	"extKeyRequired": false,

@@ -42,6 +42,53 @@ module.exports = {
 			]
 		},
 		{
+			product: "EXAMP",
+			package: "EXAMP_3ZE08",
+			appId: "5f3d50ade3443735ac673ec6",
+			description: "this is for example 3",
+			_TTL: 21600000,
+			keys: [
+				{
+					key: "81d289e2eeb10035f43309ca623962e3",
+					extKeys: [
+						{
+							extKey: "4ea5db4c70b6168aeede6a8a56cb46246ca38b1b4f801f090d5821bd76b339e34b8ddb9ac2cb7ffee220cf3e463ac9cdf3902e91720c8f56684d7d88287affc0092eeb37648e7bde4f565f509b1b384127022bc2c1c1581f4ba50e28564d1c5c",
+							device: {},
+							geo: {},
+							env: "EXAMPLE",
+							label: "example",
+							expDate: null
+						}
+					],
+					config: {}
+				}
+			]
+		},
+		{
+			product: "EXAMP",
+			package: "EXAMP_4H6CQ",
+			appId: "5f3d52dde3443735ac673ec7",
+			description: "this is for example 3",
+			_TTL: 21600000,
+			keys: [
+				{
+					key: "c4fe1d8543fc786b06fae9f2aa3dd702",
+					extKeys: [
+						{
+							extKey: "4ea5db4c70b6168aeede6a8a56cb4624079ff72a87d5174f5d880d546f326077dd82b8131322c2a5dbc02edec9d5ad7bfbfcf3730c2205850ffe7644e259ad2ee20280d25a1cfecdb7a62992920d2155cb30edffb6e53d49c528cc2e1ae54a6e",
+							device: {},
+							geo: {},
+							env: "EXAMPLE",
+							label: "example",
+							expDate: null
+						}
+					],
+					config: {}
+				}
+			]
+		},
+		
+		{
 			"product": "IURAC",
 			"package": "IURAC_IURAC",
 			"appId": "5e73de2372e509319051f218",

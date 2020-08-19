@@ -281,7 +281,7 @@ module.exports = {
 			"name": "Example",
 			"description": "The basic package for examples",
 			"acl": {
-				"dev": {
+				"example": {
 					"urac": [
 						{
 							"version": "3",
@@ -332,6 +332,51 @@ module.exports = {
 				}
 			},
 			"_TTL": 21600000
+		},
+		{
+			code: "EXAMP_3ZE08",
+			name: "Example2",
+			description: "this is example2 package",
+			acl: {
+				example: {
+					example03: {
+						"1": {
+							access: true
+						}
+					}
+				}
+			},
+			_TTL: 21600000,
+			aclTypeByEnv: {
+				example: "granular"
+			}
+		},
+		{
+			code: "EXAMP_4H6CQ",
+			name: "Example3",
+			description: "this is for example 3",
+			acl: {
+				example: {
+					example03: {
+						"1": {
+							access: true,
+							apisPermission: "restricted",
+							get: {
+								apis: {
+									"/buildName": {
+										group: "Example",
+										access: true
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			_TTL: 21600000,
+			aclTypeByEnv: {
+				example: "granular"
+			}
 		}
 	]
 };
